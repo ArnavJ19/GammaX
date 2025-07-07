@@ -162,7 +162,12 @@ st.markdown("""
     <div class="main-header">
         <h1 style="margin:0; font-size: 2.5rem;">GammaX</h1>
         <p style="margin:0.5rem 0 0 0; font-size: 1.1rem; opacity: 0.9;">
-            Professional-grade option pricing with multiple models, Greeks analysis, and strategy builder
+            A comprehensive Python application built with Streamlit that brings professional-grade derivatives analytics to everyone. 
+        </p>
+        <h4>Developed by Arnav Jain</h3>
+        <p>Connect with me on <a href="https://www.linkedin.com/in/arnavj19/" target="_blank">LinkedIn</a></p>
+        <p style="margin-top: 1rem; opacity: 0.8;">
+            GammaX V1.0 | For educational purposes only. Not financial advice.
         </p>
     </div>
 """, unsafe_allow_html=True)
@@ -1968,15 +1973,6 @@ def main():
                      help="Positive = Max pain above current price")
 
 # Add footer with developer information
-st.markdown("""
-    <div class="developer-credit">
-        <h3>Developed by Arnav Jain</h3>
-        <p>Connect with me on <a href="https://www.linkedin.com/in/arnavj19/" target="_blank">LinkedIn</a></p>
-        <p style="margin-top: 1rem; opacity: 0.8;">
-            GammaX V1.0 | For educational purposes only. Not financial advice.
-        </p>
-    </div>
-""", unsafe_allow_html=True)
 
 # Run the app
 if __name__ == "__main__":
