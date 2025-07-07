@@ -1,6 +1,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
+import math
 import plotly.graph_objects as go
 import plotly.express as px
 from plotly.subplots import make_subplots
@@ -315,7 +316,7 @@ class OptionPricingModels:
             sigma_n = np.sqrt(sigma**2 + n * sigma_j**2 / T)
             
             # Poisson probability
-            poisson_prob = np.exp(-lambda_j * T) * (lambda_j * T)**n / np.math.factorial(n)
+            poisson_prob = np.exp(-lambda_j * T) * (lambda_j * T)**n / math.factorial(n)
             
             # Black-Scholes price with adjusted parameters
             bs_price = OptionPricingModels.black_scholes(S, K, T, r_n, sigma_n, q, option_type)
